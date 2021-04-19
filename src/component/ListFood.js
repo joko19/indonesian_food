@@ -1,13 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {ScrollView, StyleSheet} from 'react-native';
-import {
-  View,
-  Header,
-  Body,
-  Text,
-} from 'native-base';
-import apiFood from './../config/endpoint'
-import ItemFood from './ItemFood'
+import {View, Header, Body, Text} from 'native-base';
+import apiFood from './../config/endpoint';
+import ItemFood from './ItemFood';
 
 function Index({navigation}) {
   const [data, setData] = useState([]);
@@ -23,18 +18,15 @@ function Index({navigation}) {
 
   return (
     <View>
-      <Header style={{backgroundColor: 'green'}}>
-        <Body>
-          <Text style={{color: 'white', fontSize: 20}}>Indonesian Food</Text>
-        </Body>
-      </Header>
       <ScrollView>
         {data.map((item, index) => {
           return (
             <ItemFood
+              id={item._id}
               key={item._id}
               img={item.cover}
-              title={item.title}
+              title={item.name}
+              navigation={navigation}
             />
           );
         })}

@@ -1,11 +1,11 @@
 import instance from "./config";
 
-const index = () => instance.get("/api/culture/");
-const detailCulture = (data) => instance.get("/api/culture/" + data);
+const index = () => instance.get("/api/dev/food");
+const detail = (data) => instance.get("/api/dev/food/" + data);
 
 const apiCulture = {
   index,
-  detailCulture,
+  detail,
 };
 
 export default apiCulture;

@@ -4,14 +4,13 @@ import {StyleSheet, View, Text} from 'react-native';
 function MoreInformation() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Developer</Text>
-      <Text style={styles.text}>Joko Slamet | 18050974030</Text>
-      <Text style={styles.title}></Text>
-      <Text style={styles.title}>UI/UX</Text>
-      <Text style={styles.text}>Yeremia Alfa Dio | 18050974002</Text>
-      <Text style={styles.title}></Text>
-      <Text style={styles.title}>Content Creator</Text>
-      <Text style={styles.text}>Erlina Intan Pratiwi | 18050974014</Text>
+      <Text style={styles.title}>Developed By</Text>
+      <Text style={styles.name}>Joko Slamet</Text>
+      <Text style={styles.text}>18050974030</Text>
+      <Text style={styles.name}>Yeremia Alfa Dio</Text>
+      <Text style={styles.text}>18050974002</Text>
+      <Text style={styles.name}>Erlina Intan Pratiwi</Text>
+      <Text style={styles.text}>18050974014</Text>
     </View>
   );
 }
@@ -20,7 +19,7 @@ export default MoreInformation;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'gainsboro',
+    backgroundColor: '#00c853',
     justifyContent: 'center',
     height: '100%',
     width: '100%',
@@ -28,14 +27,23 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   title: {
+    fontSize: 22,
+    color: 'black',
+    textAlign: 'center',
+    marginBottom: 15,
+  },
+  name: {
+    fontSize: 20,
     color: 'black',
     textAlign: 'center',
     fontWeight: 'bold',
     marginBottom: 10,
   },
   text: {
+    fontSize: 18,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontStyle: 'italic',
     color: 'black',
+    marginBottom: 25,
   },
 });
