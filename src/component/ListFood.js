@@ -147,7 +147,7 @@ class Menu extends Component {
             keyExtractor={(item, index) => item + index}
             renderSectionHeader={({section}) => (
               <>
-                <View style={{marginTop:15, backgroundColor:'white', paddingBottom:15}}>
+                <View style={{marginTop:15, backgroundColor:'white', paddingBottom:15, paddingHorizontal:10}}>
                   <Text style={styles.sectionHeader}>{section.title}</Text>
                   {section.horizontal ? (
                     <FlatList
