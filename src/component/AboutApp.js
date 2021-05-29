@@ -5,8 +5,7 @@ function AboutApp() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>
-        Indonesian Food adalah sebuah aplikasi
-        ......................................... 
+        Indonesian Food adalah sebuah aplikasi yang berisi keragaman makanan khas yang ada di Indonesia. 
       </Text>
     </View>
   );
@@ -22,6 +21,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignContent: 'center',
     alignSelf: 'center',
+    padding: 25
   },
   title: {
     color: 'black',
